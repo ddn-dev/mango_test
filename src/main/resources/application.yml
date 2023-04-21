@@ -1,0 +1,20 @@
+spring:
+    jackson:
+        default-property-inclusion: non_null
+    datasource:
+        url: jdbc:h2:mem:mangodb
+        username: sa
+        password:
+        driverClassName: org.h2.Driver
+    h2:
+        console:
+            enabled: true
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        hibernate:
+            naming:
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    data:
+        jpa:
+            repositories:
+                bootstrap-mode: default

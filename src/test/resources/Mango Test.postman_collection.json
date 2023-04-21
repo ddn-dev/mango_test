@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "d9f3cce5-6810-45c3-821a-1ea8b674104c",
+		"name": "Mango Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Daniel\",\r\n    \"lastName\": \"Diaz Navas\",\r\n    \"address\": \"Calle\",\r\n    \"city\": \"Madrid\",\r\n    \"email\": \"ddn@email.es\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/ddn@email.es",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"ddn@email.es"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Daniel\",\r\n    \"lastName\": \"Diaz Navas\",\r\n    \"address\": \"Calle\",\r\n    \"city\": \"Madrid\",\r\n    \"email\": \"ddn@email.es\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/ddn@email.es",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"ddn@email.es"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Daniel\",\r\n    \"lastName\": \"Diaz Navas\",\r\n    \"address\": \"Calle\",\r\n    \"city\": \"Madrid\",\r\n    \"email\": \"ddn@email.es\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Daniel U\",\r\n    \"lastName\": \"Diaz Navas U\",\r\n    \"address\": \"Calle U\",\r\n    \"city\": \"Madrid U\",\r\n    \"email\": \"ddn@email.es\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Slogan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"slogan text\",\r\n    \"userEmail\": \"ddn@email.es\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/campaigns/slogan",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"campaigns",
+						"slogan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
